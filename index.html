@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Mini App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body style="text-align:center; font-family:sans-serif; padding:20px;">
+  <h2>🪙 Crypto Mini App</h2>
+  <button onclick="showDeposit()">📥 Deposit</button>
+  <button onclick="showWithdraw()">📤 Withdraw</button>
+  <div id="info" style="margin-top:20px;"></div>
+
+  <script>
+    function showDeposit() {
+      document.getElementById('info').innerHTML = "Send to wallet: <br><code>bc1qexample...</code>";
+    }
+    function showWithdraw() {
+      document.getElementById('info').innerHTML = "Enter withdrawal address and amount in the bot.";
+    }
+  </script>
+</body>
+</html>
